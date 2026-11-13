@@ -454,9 +454,7 @@ it.effect("records only failed calls of tools that hand off no work", () => {
             AnalyticsService.AnalyticsService,
             AnalyticsService.AnalyticsService.of({
               record: (event, properties) =>
-                Deferred.succeed(recorded, { event, properties: properties ?? {} }).pipe(
-                  Effect.asVoid,
-                ),
+                Deferred.succeed(recorded, { event, properties: properties ?? {} }),
               flush: Effect.void,
               recordOwners: () => Effect.void,
             }),

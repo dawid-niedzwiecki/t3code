@@ -96,6 +96,8 @@ import Migration0085 from "./Migrations/085_TurnItemCounts.ts";
 import Migration0086 from "./Migrations/086_QueuedTurnInputIndex.ts";
 import Migration0087 from "./Migrations/087_ProjectionProjectsCustomTitle.ts";
 
+import Migration0088 from "./Migrations/088_AgentFeedback.ts";
+
 const migrationEntries = [
   [1, "OrchestrationEvents", Migration0001],
   [2, "OrchestrationCommandReceipts", Migration0002],
@@ -185,6 +187,7 @@ const migrationEntries = [
   [85, "TurnItemCounts", Migration0085],
   [86, "QueuedTurnInputIndex", Migration0086],
   [87, "ProjectionProjectsCustomTitle", Migration0087],
+  [88, "AgentFeedback", Migration0088],
 ] as const;
 
 export const migrationManifest = migrationEntries.map(([id, name]) => [id, name] as const);
