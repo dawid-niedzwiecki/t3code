@@ -95,7 +95,6 @@ import Migration0084 from "./Migrations/084_LastExecutedRunIndex.ts";
 import Migration0085 from "./Migrations/085_TurnItemCounts.ts";
 import Migration0086 from "./Migrations/086_QueuedTurnInputIndex.ts";
 import Migration0087 from "./Migrations/087_ProjectionProjectsCustomTitle.ts";
-
 import Migration0088 from "./Migrations/088_AgentFeedback.ts";
 
 const migrationEntries = [
